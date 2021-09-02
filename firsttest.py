@@ -19,8 +19,7 @@ while(stop!="exit"):
     presence_penalty=0.6,
     stop=["\n", " Human:", " AI:"]
   )
-  object_string = repr(response.choices)
-  object_string = json.JSONDecoder(object_string)
-  print(object_string)
+
+  print(response.choices)
 
 
