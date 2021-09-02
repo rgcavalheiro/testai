@@ -2,7 +2,7 @@ import json
 import os
 import openai
 
-openai.api_key = 'api_key'
+openai.api_key = 'apikey'
 
 
 
@@ -20,6 +20,6 @@ while(stop!="exit"):
     stop=["\n", " Human:", " AI:"]
   )
 
-  print(response.choices)
+  print(response.choices[0].text)
 
 
